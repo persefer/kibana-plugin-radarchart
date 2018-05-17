@@ -1,7 +1,6 @@
-# kibana_health_metric_vis
-A kibana plugin  to change color of metric depending to the planned state of health 
+# kibana-plugin-radarchart
+A kibana plugin to add a radar chart visualization.
 
-This plugin is inspired by the plugin [health_metric_vis](https://github.com/DeanF/health_metric_vis)
 
 <p align="center">
 <img src="https://rawgit.com/clamarque/kibana_health_metric_vis/master/assets/images/demo.gif" alt="demo">
