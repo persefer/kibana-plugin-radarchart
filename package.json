@@ -1,0 +1,11 @@
+{
+    "name": "kibana-plugin-radarchart",
+    "version": "6.2.4",
+    "kibana": {
+        "version": "6.2.4"
+    },
+    "author": "persefer",
+    "description": "Radar Chart",
+    "homepage": "https://github.com/persefer/kibana-plugin-radarchart",
+    "main": "index.js"
+}
