@@ -6,7 +6,7 @@ import { VisSchemasProvider } from 'ui/vis/editors/default/schemas';
 import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
 import { vislibColorMaps } from 'ui/vislib/components/color/colormaps';
 import { RadarChartComponent } from './radar_chart_controller';
-import image from './images/icon-number.svg';
+import image from './images/radar-chart.svg';
 // we need to load the css ourselves
 
 // we also need to load the controller and used by the template
