@@ -22,8 +22,8 @@ function RadarChartProvider(Private) {
   // Vis object of this type.
 
   return VisFactory.createReactVisualization({
-    name: 'health-metric',
-    title: 'health-metric',
+    name: 'radar_chart',
+    title: 'radar_chart',
     image,
     description: 'Displays a metric with a color according to the planned state of health.',
     category: CATEGORY.DATA,
