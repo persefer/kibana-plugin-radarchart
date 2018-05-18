@@ -1,20 +1,20 @@
-import 'plugins/radar-chart/health_metric_vis.less';
-import mainTemplate from 'plugins/health_metric_vis/health_metric_vis_params.html';
+import 'plugins/radar_chart/radar_chart.less';
+import mainTemplate from 'plugins/radar_chart/radar_chart.html';
 import { VisFactoryProvider } from 'ui/vis/vis_factory';
 import { CATEGORY } from 'ui/vis/vis_category';
 import { VisSchemasProvider } from 'ui/vis/editors/default/schemas';
 import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
 import { vislibColorMaps } from 'ui/vislib/components/color/colormaps';
-import { HealthMetricVisComponent } from './health_metric_vis_controller';
+import { RadarChartComponent } from './radar_chart_controller';
 import image from './images/icon-number.svg';
 // we need to load the css ourselves
 
 // we also need to load the controller and used by the template
 
 // register the provider with the visTypes registry 
-VisTypesRegistryProvider.register(HealthMetricVisProvider);
+VisTypesRegistryProvider.register(RadarChartProvider);
 
-function HealthMetricVisProvider(Private) {
+function RadarChartProvider(Private) {
   const Schemas = Private(VisSchemasProvider);
   const VisFactory = Private(VisFactoryProvider);
 
@@ -28,7 +28,7 @@ function HealthMetricVisProvider(Private) {
     description: 'Displays a metric with a color according to the planned state of health.',
     category: CATEGORY.DATA,
     visConfig: {
-      component: HealthMetricVisComponent,
+      component: RadarChartComponent,
       defaults: {
         addTooltip: true,
         addLegend: false,
@@ -85,4 +85,4 @@ function HealthMetricVisProvider(Private) {
   });
 }
 
-export default HealthMetricVisProvider;
+export default RadarChartProvider;
