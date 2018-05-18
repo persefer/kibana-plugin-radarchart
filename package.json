@@ -1,5 +1,5 @@
 {
-    "name": "radar-chart",
+    "name": "radar_chart",
     "version": "6.2.4",
     "kibana": {
         "version": "6.2.4"
